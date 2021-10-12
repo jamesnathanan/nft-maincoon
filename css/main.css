@@ -54,9 +54,30 @@ body {
 .text-munsell {
   color: var(--munsell);
 }
+.text-jazzberry {
+  color: var(--jazzberry);
+}
 .bg-amaranth {
   background-color: var(--amaranth);
 }
+.title-underline {
+  width: 60%;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline__center {
+  position: absolute;
+  height: 0.6rem;
+  background: var(--mp);
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+
 .social-icons {
   margin: auto;
   margin-bottom: 15px;
@@ -128,10 +149,82 @@ body {
 .common-p {
   font-size: 1em;
   text-align: justify;
+  color: var(--munsell) !important;
 }
+
+/* gallery section */
+.gallery-img-container {
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.gallery-img-container:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.gallery-img {
+  transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.3;
+}
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform: translate(-50%, 100%);
+  background: var(--bedazzle);
+  color: var(--mainWhite);
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.gallery-info:hover {
+  text-decoration: none;
+  color: var(--mainDark);
+}
+.gallery-img-container:hover .gallery-info {
+  transform: translate(-50%, 0);
+}
+
+.gallery-icon {
+  position: absolute;
+  color: var(--mainWhite);
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+  /* cursor: pointer; */
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 0.2;
+}
+
+/* end of gallery section */
+
+.seo-section {
+  background-color: var(--cyberdark);
+}
+
+.gallery2 {
+  background-color: var(--bedazzle);
+}
+
+.final {
+  background-color: var(--cyberdark);
+}
+
 .line {
   border-bottom: 1px solid var(--mainWhite);
   display: block;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer-line {
   max-width: 90%;
