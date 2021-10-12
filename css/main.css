@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap");
+
+:root {
+  --mainDark: #000;
+  --mainGreen: #61e786;
+  --mainWhite: #fff;
+  --mainGrey: #c2c2c2;
+
+  --bayc: #bfc500;
+
+  --amaranth: #b7094c;
+  --jazzberry: #a01a58;
+  --mp: #892b64;
+  --palatinate: #892b64;
+  --cyber: #5c4d7d;
+  --cyberdark: #161120;
+  --bedazzle: #455e89;
+  --sapphire: #2e6f95;
+  --cg: #1780a1;
+  --munsell: #0091ad;
+}
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.05rem;
+  }
+}
+
+body {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Comic Neue", cursive;
+  background: var(--mainDark);
+  color: var(--mainWhite);
+}
+.text-cyber {
+  color: var(--cyber);
+}
+.text-munsell {
+  color: var(--munsell);
+}
+.bg-amaranth {
+  background-color: var(--amaranth);
+}
+.social-icons {
+  margin: auto;
+  margin-bottom: 15px;
+}
+.social-icon {
+  color: var(--mp);
+}
+/* .get-container {
+  position: relative;
+} */
+
+/* .common-title {
+  position: absolute;
+  right: 22%;
+  bottom: 1.4rem;
+}
+.common-title2 {
+  position: absolute;
+  right: 22%;
+  bottom: 20%;
+} */
+.mm-button {
+  background-color: var(--amaranth);
+  border-radius: 8px;
+  color: var(--cyberdark);
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5%;
+  margin: auto auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.mm-button:hover {
+  background-color: var(--mainWhite);
+}
+.welcome {
+  background-color: var(--mainDark);
+}
+.common-title {
+  position: sticky;
+  font-size: 1.2em;
+  font-weight: 800;
+  font-style: italic;
+}
+.scroll {
+  opacity: 1;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: var(--sapphire);
+  letter-spacing: 0.05em;
+  line-height: 0.6em;
+  animation: blinker 1.3s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max-content;
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.common-p {
+  font-size: 1em;
+  text-align: justify;
+}
+.line {
+  border-bottom: 1px solid var(--mainWhite);
+  display: block;
+}
+.footer-line {
+  max-width: 90%;
+}
+
+@media screen and (min-width: 992px) {
+  .welcome {
+    margin-top: -220px;
+  }
+}
