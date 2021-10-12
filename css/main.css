@@ -230,8 +230,29 @@ body {
   max-width: 90%;
 }
 
+#jessy {
+  opacity: 0.5;
+  border: 8px solid var(--mp);
+  border-radius: 55%;
+}
+
 @media screen and (min-width: 992px) {
   .welcome {
     margin-top: -220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mb-lg-auto,
+  .my-lg-auto {
+    margin-bottom: auto !important;
+    margin-top: auto !important;
+  }
+  .order-lg-first {
+    order: -1;
+  }
+  .col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 }
